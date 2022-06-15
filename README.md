@@ -1,2 +1,1 @@
-# -E-Commerce-Product-Page
-A Frontend Mentor Challenge
+A Front-End Mentor Challenge
