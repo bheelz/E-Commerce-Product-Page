@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link href="\dist\output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="font-['Kumbh_Sans'] xl:px-40 2xl:px-60 lg:px-20 md:px-20">
+    <header>
+      <nav class="p-8 lg:py-0 lg:border-b-2 lg:border-b-gray-200 md:px-0">
+        <!--NAV CONTAINER-->
+
+        <div class="flex items-center content-center justify-between">
+          <!--HAMBURGER AND LOGO DIVS-->
+
+          <div class="flex">
+            <div class="pt-1 lg:hidden">
+              <img src="images/icon-menu.svg" alt="" />
+            </div>
+            <div class="pl-6 lg:pt-8 lg:pl-0 md:pr-24">
+              <img class="cursor-pointer" src="images/logo.svg" alt="" />
+            </div>
+            <div class="flex ">
+              <ul class="lg:flex pt-8 space-x-7 hidden text-gray-500">
+                <li class="hover:border-b-4 hover:border-orange-500 hover:text-orange-500 cursor-pointer">
+                  Collections
+                </li>
+                <li class="hover:border-b-4 hover:border-orange-500 hover:text-orange-500 cursor-pointer">Men</li>
+                <li class="hover:border-b-4 hover:border-orange-500 hover:text-orange-500 cursor-pointer">Women</li>
+                <li class="hover:border-b-4 hover:border-orange-500 hover:text-orange-500 cursor-pointer">About</li>
+                <li class="hover:border-b-4 hover:border-orange-500 hover:text-orange-500 cursor-pointer">Contact</li>
+               <!--BUG PATCH-->
+                <li class="invisible pb-8 hover:border-b-4 hover:border-orange-500 hover:text-orange-500 cursor-pointer">i</li>
+              </ul>
+            </div>
+          </div>
+
+          <!--CART ICON AND AVATAR DIVS-->
+
+          <div class="flex items-center">
+            <div>
+              <img class="cursor-pointer" src="images/icon-cart.svg" alt="" />
+            </div>
+            <div class="md:pl-11 pl-6 md:w-20 w-14">
+              <img
+                class="hover:border-2 hover:rounded-full hover:border-orange-500 cursor-pointer"
+                src="images/image-avatar.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!--OVERALL MAIN CONTAINER-->
+
+      <div class="lg:flex lg:justify-between">
+        <!--PRODUCT IMAGE CONTAINER-->
+
+        <div class="lg:grid lg:justify-items-center lg:w-1/2 lg:pt-28">
+          <!--HEADER IMAGE-->
+
+          <div
+            class="w-full cursor-pointer lg:w-[450px] lg:h-[450px] lg:rounded-lg h-[400px] px-8 bg-cover bg-no-repeat bg-center"
+            style="background-image: url(images/image-product-1.jpg)"
+          ></div>
+          <div class="hidden space-x-8 w-[450px] mt-8 lg:flex">
+            <div>
+              <img
+                class="cursor-pointer rounded-lg"
+                src="images/image-product-1-thumbnail.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="cursor-pointer rounded-lg"
+                src="images/image-product-2-thumbnail.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="cursor-pointer rounded-lg"
+                src="images/image-product-3-thumbnail.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="cursor-pointer rounded-lg"
+                src="images/image-product-4-thumbnail.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <!--TEXT AND BUTTON CONTAINER-->
+
+        <div class="lg:pt-28 lg:w-1/2 xl:px-20 lg:px-12">
+          <!--TEXT SECTION-->
+
+          <div class="py-8 px-8 md:px-0">
+            <h3
+              class="uppercase text-[13px] tracking-[.19em] font-black text-[#FF7D1A]"
+            >
+              sneaker company
+            </h3>
+            <h2 class="pt-3 text-[35px] font-black leading-tight">
+              Fall Limited Edition Sneakers
+            </h2>
+            <p class="pt-4 text-gray-500">
+              These low-profile sneakers are your perfect casual wear companion.
+              Featuring a durable rubber outer sole, they’ll withstand
+              everything the weather can offer.
+            </p>
+          </div>
+
+          <!--PRICING SECTION-->
+
+          <div class="flex px-8 md:px-0 pb-3">
+            <div class="pr-6">
+              <h3 class="text-2xl font-black">$125.00</h3>
+            </div>
+            <div class="pt-[3px] border rounded-md px-2 bg-[#FFEDE0]">
+              <h3 class="font-black text-[#FF7D1A]">50%</h3>
+            </div>
+            <div class="w-full md:w-auto md:flex-none md:hidden">
+              <div class="text-end md:text-start">
+                <h3 class="pt-1 text-gray-400 line-through font-bold">
+                  $250.00
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <!--PRICE TAG STRIKETHROUGH FROM MEDIUM SCREEN DEVICES-->
+
+          <div class="hidden md:contents">
+            <div class="">
+              <h3 class="pb-9 lg:pb-3 text-gray-400 line-through font-bold">
+                $250.00
+              </h3>
+            </div>
+          </div>
+
+          <!--ADD ITEMS SECTION-->
+
+          <div class="px-8 lg:h-20 lg:flex md:px-0">
+            <div
+              class="flex lg:grow rounded-xl lg:mt-4 lg:mr-3 py-3 p-5 justify-between bg-[#F7F8FD] font-bold"
+            >
+              <div class="pt-4 text-[#FF7D1A] cursor-pointer">
+                <img src="images/icon-minus.svg" alt="" />
+              </div>
+              <div class="text-xl pt-1">0</div>
+              <div class="pt-3 text-[#FF7D1A] cursor-pointer">
+                <img src="images/icon-plus.svg" alt="" />
+              </div>
+            </div>
+
+            <!--ADD TO CART BUTTON-->
+
+            <div class="p-5 lg:w-52 py-3 mt-5 md:mt-4 cursor-pointer text-white
+            font-medium text-lg mb-10 md:mb-0 rounded-xl flex justify-center
+            hover:bg-orange-600 bg-[#FF7D1A]"">
+            <p class="lg:pt-1.5">
+              <svg width="22" height="19" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                  fill="#fff"
+                  fill-rule="nonzero"
+                />
+              </svg>
+            </p>
+            <p class="pl-4 lg:p-1.5">Add to cart</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
