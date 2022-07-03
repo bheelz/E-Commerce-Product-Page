@@ -43,7 +43,7 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- TailwindCSS
+- Tailwind CSS
 - Flexbox
 
 ### What I learned
