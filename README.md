@@ -38,7 +38,7 @@ Users should be able to:
 </p>
 
 ### Links
-- [Live Site](https://bheelz.github.io/E-Commerce-Product-Page/)
+- [Live Site](https://bheelz.github.io/eCommerceLandingPage/)
 
 ### Built with
 
